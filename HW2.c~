@@ -35,29 +35,41 @@
 
 
 int main() {
-  int input;
-  int answer = 0;
+  int input, nstart, nstop;
+
   printf("Enter an integer to calculate the zNumber of: \n");
   scanf("%d", &input);
+  printf("The zNumber of  %d + is zNumber(%d) = %d: \n ", input, input, zNumber(input));
   
+  printf("\nEnter the start integer of the interval to calculate the zNumber for: \n");
+  scanf("%d", &nstart);
+  printf("\nNow enter the stop integer: \n");
+  scanf("%d", &nstop);
+  printf("\nzNumber2(%d,%d) = %d \n", nstart, nstop, zNumber2(nstart,nstop));
+
+  getchar();
+  return 0;
+}
+//Program 1
+int zNumber(int input) {
+  int answer = 0;
   int i;
-  
-  for(i = 1; i < input; i++){
+
+  for(i = 1; i <= input; i++){
     answer += pow(i,3);
   }
 
-  printf("The zNumber of "+input+" is zNumber("+") = "+answer  );
-  /*
-  answer = 0;
-  
-  
-  int nstart, nstop;
+  return answer;
+}
 
-  scanf("Enter your start and stop here: %d %d", &nstart, &nstop);
+//Program 2 (Modified Program 1)
+int zNumber2(int nstart, int nstop) {
+  int answer = 0;
   int j;
-  for(int j = nstart; j < nstop; j++)
-    answer += pow(j, 3);
-  */
 
-  return 0;
+  for(j = nstart; j <= nstop; j++){
+    answer += pow(j,3);
+  }
+
+  return answer;
 }
