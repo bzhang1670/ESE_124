@@ -1,0 +1,47 @@
+/****************
+Design a program in C whose task is to compute the values of the following two functions of angle theta specified in degrees over two user-specified contiguous angle zones:
+
+F1 = sin(theta) + 2cos(2theta) for theta_1 <= theta <= theta_2 and
+F2 = sin(2theta) - cos(theta) for theta_2 < theta <= theta_3
+
+
+
+ ****************/
+
+#include <stdio.h>
+#include <math.h>
+#define pi 3.141592653
+/*
+
+functions: sin(double), sinf, sinl, cos, cosf, ...
+
+*/
+
+int main() {
+  int pie, cake, crepes, gingerbread;
+
+  int i, upperbound;
+  i=0;
+  upperbound = 10;
+    for(i = 0; i <= upperbound; i++){
+      printf("i is now %d. Upperbound is %d. Is i still <= upperbound?\n", i, upperbound);
+      printf("No, so let's keep going!\n");
+    }//exit the forloop
+    printf("i is now > upperbound");
+
+  getchar();
+  return 0;
+
+}
+
+float f1(ang1, ang2, delta) {
+  float result;
+
+  return result;
+}
+
+float f2(ang1, ang2, delta) {
+  float result;
+
+  return result;
+}

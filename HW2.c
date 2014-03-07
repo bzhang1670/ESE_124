@@ -35,8 +35,11 @@
 
 
 int main() {
-  int input, nstart, nstop, nstep;
-
+  int input, nstart, nstop, nstep, input2;
+  float floats;
+  floats = 1.2;
+  printf("The pow of %d is: %f\n", floats, pow(floats,-1));
+  /*
   printf("Enter an integer to calculate the zNumber of: \n");
   scanf("%d", &input);
   printf("The zNumber of  %d is zNumber(%d) = %d: \n ", input, input, zNumber(input));
@@ -53,7 +56,7 @@ int main() {
   for(i = nstart; i <= nstop; i+=nstep){ 
     printf("\n%d |%d\n",i,zNumber(i));
   }
-
+  */
   getchar();
   return 0;
 }
@@ -69,4 +72,17 @@ int zNumber(int input) {
 
   return answer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
