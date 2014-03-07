@@ -13,7 +13,7 @@ float toRadians(int degAng){ //Converts an angle in degrees to radians
 }
 
 float f1(float ang) { //Evaluates Function F1 of an angle
-  return sinf(toRadians(ang)) + (2 * cosf(2 * toRadians(ang)));
+  return (sinf( toRadians(ang) ) + (2 * cosf(2 * toRadians( ang ) ) ));
 }
 
 float f2(float ang) { //Evaluates Function F2 of an angle
@@ -22,8 +22,9 @@ float f2(float ang) { //Evaluates Function F2 of an angle
 
 
 int main() {
+  
   int pie, cake, crepes, gingerbread; //θ1, θ2, θ3, ∆θ (in order)
-  int theta = 0;
+  float theta = 0.0;
   printf("\nEnter your value for θ1: \n");
   scanf("%d", &pie);
   printf("Enter your value for θ2: \n");
@@ -33,20 +34,20 @@ int main() {
   printf("Enter your value for ∆θ: \n");
   scanf("%d", &gingerbread);
   printf("Here are your entered values: θ1=%d, θ2=%d, θ3=%d, ∆θ=%d\n", pie, cake, crepes, gingerbread);
-  theta=pie;
+  theta = (float) pie;
 
   printf("\t\t|---------------|---------------|---------------|---------------|\n");
   printf("\t\t|Angle (Degrees)|Angle (Radians)|F1             |F2             |\n");
   while(theta<=crepes){
     if(theta<=cake){
-      printf("\t\t|%d             |%.2f         |%.2f             |%.2f             |\n",theta,toRadians(theta),f1(toRadians(theta)),0.0);
+      printf("\t\t|%-7.2f        |%-7.2f        |%-7.2f        |%-7.2f        |\n",theta,toRadians(theta),f1(theta),0.0);
     } else { 
-      printf("\t\t|%d             |%.2f         |%.2f             |%.2f             |\n",theta,toRadians(theta),0.0,f2(toRadians(theta)));
+      printf("\t\t|%-7.2f        |%-7.2f        |%-7.2f        |%-7.2f        |\n",theta,toRadians(theta),0.0,f2(theta));
     }
     theta+=gingerbread;
   }
   printf("\t\t|---------------|---------------|---------------|---------------|\n");
- 
+
   getchar();
   return 0;
 }
