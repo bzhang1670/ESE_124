@@ -13,11 +13,11 @@ float toRadians(int degAng){ //Converts an angle in degrees to radians
 }
 
 float f1(float ang) { //Evaluates Function F1 of an angle
-  return sinf(toRadians(ang)) + (2*cosf(2*toRadians(ang)));
+  return sinf(toRadians(ang)) + (2 * cosf(2 * toRadians(ang)));
 }
 
 float f2(float ang) { //Evaluates Function F2 of an angle
-  return sinf(2*toRadians(ang)) - cosf(2*toRadians(ang));
+  return sinf(2 * toRadians(ang)) - cosf(2 * toRadians(ang));
 }
 
 
