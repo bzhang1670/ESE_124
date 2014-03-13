@@ -4,12 +4,11 @@
 int main() {
   
   int i, runmode, numres, res, try;
-  float sum, totalres;
+  float sum =0;
   printf("Enter a integer for runmode (0 for series, 1 for parallel): \n");
   while(try < 1) {
     scanf("%d",&runmode);
 
-    sum=0.0;
     if(runmode == 0) { //Series
 
       printf("You have selected series. Enter the number of resistances you want to find the sum for: \n");
@@ -47,7 +46,7 @@ int main() {
     
   } //end while loop
 
-  printf("The total resistances of your circuit is %.5f\n", sum);
+  printf("The total resistances of your circuit is %.5f Ohms \n", sum);
 
   getchar();
   return 0;
