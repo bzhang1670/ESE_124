@@ -59,7 +59,7 @@ int main() {
     
   } //end while loop
 
-  printf("The total resistances of your circuit is %.5f Ohms \n", Req);
+  printf("The total resistance of your circuit is %.5f Ohms \n", Req);
 
   getchar();
   return 0;

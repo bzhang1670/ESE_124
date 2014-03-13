@@ -17,7 +17,7 @@ int main() {
   int i, runmode, numres, res, try;
   float Req=0;
   printf("Enter a integer for runmode (0 for series, 1 for parallel): \n");
-  while(try < 1) {
+  while(try < 1) { 
     scanf("%d",&runmode);
 
     if(runmode == 0) { //Series
@@ -53,8 +53,7 @@ int main() {
       
     } else {
       
-      printf("You have entered an invalid runmode (You entered: %d). Try again: \n", runmode);
-      
+      printf("You have entered an invalid runmode (You entered: %d). Try again: \n", runmode); //This will keep printing until try is equal to 1, i.e. the user enters a valid runmode.   
     }
     
   } //end while loop
