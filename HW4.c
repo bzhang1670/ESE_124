@@ -11,7 +11,7 @@ int main() {
 
     if(runmode == 0) { //Series
 
-      printf("You have selected series. Enter the number of resistances you want to find the sum for: \n");
+      printf("You have selected series. Enter the number of resistors you want to find the resistance for: \n");
       scanf("%d", &numres);
 
       for(i=0; i<numres; i++) {
@@ -25,7 +25,7 @@ int main() {
 
     } else if(runmode == 1) { //Parallel
    
-      printf("You have select parallel. Enter the number of resistances you want to find the sum for: \n");
+      printf("You have selected parallel. Enter the number of resistors you want to find the resistance for: \n");
       scanf("%d", &numres);
 
       for(i=0; i<numres; i++) {
