@@ -16,7 +16,9 @@ int main() {
   
   int i, runmode, numres, res, try;
   float Req=0;
+  try = 0;
   printf("Enter a integer for runmode (0 for series, 1 for parallel): \n");
+
   while(try < 1) { 
     scanf("%d",&runmode);
 
