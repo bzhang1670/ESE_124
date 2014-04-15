@@ -39,6 +39,7 @@ float equivRParallel() {
 
 int main() {
   int runmode;
+
   printf("Please enter a runmode(1 for series or 2 for parallel): \n");
   scanf("%d", &runmode);
   
