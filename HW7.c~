@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+
+void equivRseries(int num) {
+
+}
+
+void equivRParallel(int num) {
+
+}
+
+int main() {
+  int runmode;
+  printf("Please enter a runmode(1 or 2): \n");
+  scanf("%d", &runmode);
+  
+  switch(runmode) {
+  case 1: //series
+    //do stuff
+    break;
+  case 2: //
+    //do stuff
+    break;
+  default:
+    //do nothing(?)
+    break;
+  }
+
+
+  getchar();
+  return 0;
+}
