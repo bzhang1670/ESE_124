@@ -1,3 +1,9 @@
+/****************
+Brian Zhang
+ESE 124
+HW 8
+ ****************/
+
 #include<stdio.h>
 #include<math.h>
 
@@ -66,11 +72,11 @@ float equivCParallel() {
     if(cap == 0)
       break;
     
-    sum += 1 / cap;
+    sum += cap;
     counter++;
   }
 
-  return 1/ sum;
+  return sum;
 }
 
 float equivLSeries() {

@@ -1,3 +1,9 @@
+/****************
+Brian Zhang
+ESE 124
+HW 7
+ ****************/
+
 #include<stdio.h>
 #include<math.h>
 
